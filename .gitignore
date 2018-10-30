@@ -1,0 +1,9 @@
+logs/
+*.log
+.grunt
+build/
+node_modules/
+bower_components/
+.idea/
+.DS_Store
+rev/

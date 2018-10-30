@@ -1,0 +1,27 @@
+a {
+    font-size: 18px;
+    background: center;
+}
+.bar{
+	display: flex;
+}
+.bar>a{
+	display: block;
+	width: 200px;
+	height: 200px;
+}
+.bar>a:hover{
+	color: #7dd43b;
+}
+.bar .icon-wechat{
+	background: url(../iconfont/wechat.png) no-repeat center;
+}
+.bar .icon-addr_file{
+	background: url(../iconfont/addr_file.png) no-repeat center;
+}
+.bar .icon-font{
+	background: url(../iconfont/font.png) no-repeat center;
+}
+.bar .icon-my{
+	background: url(../iconfont/my.png) no-repeat center;
+}

@@ -1,0 +1,13 @@
+@charset "UTF-8";
+@import "main";
+@import "../widget/button";
+@import "../widget/form";
+@import "../widget/grid";
+
+.btn-fix-100 {
+    min-width: $btn-100;
+}
+
+.img-thumbnail {
+    max-width: $img-500;
+}

@@ -1,0 +1,112 @@
+@charset "UTF-8";
+@import "../var/colors";
+@import "../var/dimens";
+
+.btn {
+    display: inline-block;
+    zoom: 1;
+    line-height: normal;
+    white-space: nowrap;
+    vertical-align: middle;
+    text-align: center;
+    cursor: pointer;
+    -webkit-user-drag: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.btn::-moz-focus-inner {
+    padding: 0;
+    border: 0;
+}
+
+.btn {
+    font-family: inherit;
+    font-size: 100%;
+    padding: 0.5em 1em;
+    color: #444; /* rgba not supported (IE 8) */
+    color: rgba($color-black, 0.80); /* rgba supported */
+    border: 1px solid $color-border-gray;  /*IE 6/7/8*/
+    border: none rgba($color-black, 0);  /*IE9 + everything else*/
+    background-color: $color-btn-default;
+    text-decoration: none;
+    border-radius: $border-radius;
+}
+
+.btn-hover,
+.btn:hover,
+.btn:focus {
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00000000', endColorstr='#1a000000',GradientType=0);
+    background-image: -webkit-gradient(linear, 0 0, 0 100%, from(transparent), color-stop(40%, rgba($color-black, 0.05)), to(rgba($color-black, 0.10)));
+    background-image: -webkit-linear-gradient(transparent, rgba($color-black, 0.05) 40%, rgba($color-black, 0.10));
+    background-image: -moz-linear-gradient(top, rgba($color-black, 0.05) 0%, rgba($color-black, 0.10));
+    background-image: -o-linear-gradient(transparent, rgba($color-black, 0.05) 40%, rgba($color-black, 0.10));
+    background-image: linear-gradient(transparent, rgba($color-black, 0.05) 40%, rgba($color-black, 0.10));
+}
+.btn:focus {
+    outline: 0;
+}
+.btn-active,
+.btn:active {
+    box-shadow: 0 0 0 1px rgba($color-black, 0.15) inset, 0 0 6px rgba($color-black, 0.20) inset;
+    border-color: #000\9;
+}
+
+.btn[disabled],
+.btn-disabled,
+.btn-disabled:hover,
+.btn-disabled:focus,
+.btn-disabled:active {
+    border: none;
+    background-image: none;
+    filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
+    filter: alpha(opacity=40);
+    -khtml-opacity: 0.40;
+    -moz-opacity: 0.40;
+    opacity: 0.40;
+    cursor: not-allowed;
+    box-shadow: none;
+}
+
+.btn-hidden {
+    display: none;
+}
+
+/* Firefox: Get rid of the inner focus border */
+.btn::-moz-focus-inner{
+    padding: 0;
+    border: 0;
+}
+
+.btn-primary,
+.btn-selected,
+a.btn-primary,
+a.btn-selected {
+    background-color: $color-primary;
+    color: $color-white;
+}
+
+.btn-success {
+    background-color: $color-success;
+    color: $color-white;
+}
+
+.btn-danger {
+    background-color: $color-danger;
+    color: $color-white;
+}
+
+.btn-warning {
+    background-color: $color-warning;
+    color: $color-white;
+}
+
+.btn-info {
+    background-color: $color-info;
+    color: $color-white;
+}

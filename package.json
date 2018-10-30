@@ -1,0 +1,37 @@
+{
+  "name": "demo",
+  "version": "1.0.0",
+  "description": "web app demo",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "demo",
+    "web",
+    "app"
+  ],
+  "devDependencies": {
+    "del": "2.2.2",
+    "gulp": "^3.9.1",
+    "gulp-clean-css": "3.0.4",
+    "gulp-concat": "2.6.1",
+    "gulp-htmlmin": "^3.0.0",
+    "gulp-if": "2.0.2",
+    "gulp-imagemin": "3.2.0",
+    "gulp-jshint": "2.0.4",
+    "gulp-livereload": "3.8.1",
+    "gulp-load-plugins": "1.5.0",
+    "gulp-rename": "1.2.2",
+    "gulp-rev": "7.1.2",
+    "gulp-rev-collector": "1.1.1",
+    "gulp-strip-debug": "1.1.0",
+    "gulp-uglify": "2.1.2",
+    "gulp-useref": "3.1.2",
+    "gulp-webserver": "0.9.1",
+    "gulp.spritesmith": "^6.5.0",
+    "jshint": "2.9.4"
+  },
+  "author": "chenhd",
+  "license": "ISC"
+}
